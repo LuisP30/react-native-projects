@@ -1,6 +1,17 @@
 import React from "react"
-import { Text } from "react-native"
+import {View} from "react-native"
+import Primeiro from  './components/Primeiro'
+import CompPadrao, { Comp2, Comp3 } from "./components/Multi"
 
-export default () => {
-    return <Text>Primeiro componente</Text>
-}
+export default () => (
+    <View>
+        {/* Meu primeiro componente */}
+        <Primeiro />
+
+        {/* Entendendo o sistema de módulos do ECMAScript */}
+        <Comp2 />
+        <Comp3 />
+        <CompPadrao />
+
+    </View>
+)
