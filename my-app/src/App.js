@@ -3,6 +3,7 @@ import { View, StyleSheet, SafeAreaView, StatusBar } from "react-native"
 import Primeiro from  './components/Primeiro'
 import CompPadrao, { Comp2, Comp3 } from "./components/Multi"
 import MinMax from "./components/MinMax"
+import Aleatorio from "./components/Aleatorio"
 
 export default () => (
     <View style={style.App}>
@@ -20,7 +21,10 @@ export default () => (
         <MinMax min={3} max="20" /> 
         {/* Para enviar um valor númerico utiliza-se um par de chaves */}
 
-        
+        {/* Gerando números aleatórios */}
+        <Aleatorio min={5} max={10}/>
+
+
     </View>
 )
 
