@@ -1,15 +1,16 @@
 // Arquivo com múltiplos componentes
 import React from "react";
 import { Text } from "react-native";
+import estilo from "./estilo"; // Utilizando meu estilo (StyleSheet)
 
 export default function Comp(){
-    return <Text>#Comp padrão</Text>
+    return <Text style={estilo.fontG}>#Comp padrão</Text>
 }
 export function Comp2(){
-    return <Text>#Comp 02</Text>
+    return <Text style={estilo.fontG}>#Comp 02</Text>
 }
 export function Comp3(){
-    return <Text>#Comp 03</Text>
+    return <Text style={estilo.fontG}>#Comp 03</Text>
 }
 
 // Também posso exportar desta forma:

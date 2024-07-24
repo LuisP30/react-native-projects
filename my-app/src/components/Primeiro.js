@@ -1,5 +1,12 @@
 // Meu primeiro componente
 import React from 'react';
 import { Text } from 'react-native';
+import estilo from './estilo'; // Utilizando meu arquivo de estilo (StyleSheet)
 
-export default () => <Text>Primeiro!</Text>
+export default () => {
+    console.warn('Luis')
+    return (
+        <Text style={estilo.fontG}>Primeiro!</Text>
+    )
+
+}
