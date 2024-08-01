@@ -5,6 +5,7 @@ import CompPadrao, { Comp2, Comp3 } from "./components/Multi"
 import MinMax from "./components/MinMax"
 import Aleatorio from "./components/Aleatorio"
 import Fragment from "./components/Fragment"
+import Botao from "./components/Botao"
 
 export default () => (
     <View style={style.App}>
@@ -27,6 +28,9 @@ export default () => (
 
         {/* Aprendendo sobre React Fragment (Retornando mais de um componente) */}
         <Fragment principal={"Título"} secundario={"Secundário"} />
+
+        {/* Trabalhando com botões */}
+        <Botao />
     </View>
 )
 
@@ -34,7 +38,6 @@ export default () => (
 const style = StyleSheet.create({
     App: {
         flexGrow: 1,
-        justifyContent: 'center',
         alignItems: 'center',
         padding: 20,
 
