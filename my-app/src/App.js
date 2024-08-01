@@ -6,6 +6,7 @@ import MinMax from "./components/MinMax"
 import Aleatorio from "./components/Aleatorio"
 import Fragment from "./components/Fragment"
 import Botao from "./components/Botao"
+import Contador from "./components/Contador"
 
 export default () => (
     <View style={style.App}>
@@ -31,6 +32,10 @@ export default () => (
 
         {/* Trabalhando com botões */}
         <Botao />
+
+        {/* Entendendo o useState */}
+        <Contador valor={0} passo={2}/>
+
     </View>
 )
 
