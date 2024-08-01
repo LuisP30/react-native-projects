@@ -4,6 +4,7 @@ import Primeiro from  './components/Primeiro'
 import CompPadrao, { Comp2, Comp3 } from "./components/Multi"
 import MinMax from "./components/MinMax"
 import Aleatorio from "./components/Aleatorio"
+import Fragment from "./components/Fragment"
 
 export default () => (
     <View style={style.App}>
@@ -24,7 +25,8 @@ export default () => (
         {/* Gerando números aleatórios (passando mínimo e máximo através de propriedades) */}
         <Aleatorio min={1} max={10}/>
 
-
+        {/* Aprendendo sobre React Fragment (Retornando mais de um componente) */}
+        <Fragment principal={"Título"} secundario={"Secundário"} />
     </View>
 )
 
