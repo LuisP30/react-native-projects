@@ -21,8 +21,8 @@ export default () => (
         <MinMax min={3} max="20" /> 
         {/* Para enviar um valor númerico utiliza-se um par de chaves */}
 
-        {/* Gerando números aleatórios */}
-        <Aleatorio min={5} max={10}/>
+        {/* Gerando números aleatórios (passando mínimo e máximo através de propriedades) */}
+        <Aleatorio min={1} max={10}/>
 
 
     </View>
