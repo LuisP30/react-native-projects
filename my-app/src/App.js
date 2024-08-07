@@ -8,6 +8,7 @@ import Fragment from "./components/Fragment"
 import Botao from "./components/Botao"
 import Contador from "./components/Contador"
 import Pai from "./components/direta/Pai"
+import Pai2 from "./components/indireta/Pai"
 
 export default () => (
     <View style={style.App}>
@@ -39,6 +40,9 @@ export default () => (
 
         {/* Estudando comunicação direta */}
         <Pai />
+
+        {/* Estudando comunicação indireta */}
+        <Pai2 />
 
     </View>
 )
