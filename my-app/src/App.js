@@ -7,6 +7,7 @@ import Aleatorio from "./components/Aleatorio"
 import Fragment from "./components/Fragment"
 import Botao from "./components/Botao"
 import Contador from "./components/Contador"
+import Pai from "./components/direta/Pai"
 
 export default () => (
     <View style={style.App}>
@@ -35,6 +36,9 @@ export default () => (
 
         {/* Entendendo o useState */}
         <Contador valor={0} passo={2}/>
+
+        {/* Estudando comunicação direta */}
+        <Pai />
 
     </View>
 )
