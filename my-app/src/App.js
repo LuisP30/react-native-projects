@@ -9,40 +9,44 @@ import Botao from "./components/Botao"
 import Contador from "./components/Contador"
 import Pai from "./components/direta/Pai"
 import Pai2 from "./components/indireta/Pai"
+import ContadorV2 from "./components/contador/Contador"
 
 export default () => (
     <View style={style.App}>
         {/* Barra de status em cor azul */}
         <StatusBar backgroundColor={'blue'}/> 
         {/* Meu primeiro componente */}
-        <Primeiro />
+        {/* <Primeiro /> */}
 
         {/* Entendendo o sistema de módulos do ECMAScript */}
-        <Comp2 />
+        {/* <Comp2 />
         <Comp3 />
-        <CompPadrao />
+        <CompPadrao /> */}
 
         {/* Componente que recebe propriedades */}
-        <MinMax min={3} max="20" /> 
+        {/* <MinMax min={3} max="20" />  */}
         {/* Para enviar um valor númerico utiliza-se um par de chaves */}
 
         {/* Gerando números aleatórios (passando mínimo e máximo através de propriedades) */}
-        <Aleatorio min={1} max={10}/>
+        {/* <Aleatorio min={1} max={10}/> */}
 
         {/* Aprendendo sobre React Fragment (Retornando mais de um componente) */}
-        <Fragment principal={"Título"} secundario={"Secundário"} />
+        {/* <Fragment principal={"Título"} secundario={"Secundário"} /> */}
 
         {/* Trabalhando com botões */}
-        <Botao />
+        {/* <Botao /> */}
 
         {/* Entendendo o useState */}
-        <Contador valor={0} passo={2}/>
+        {/* <Contador valor={0} passo={2}/> */}
 
         {/* Estudando comunicação direta */}
-        <Pai />
+        {/* <Pai /> */}
 
         {/* Estudando comunicação indireta */}
-        <Pai2 />
+        {/* <Pai2 /> */}
+
+        {/* Contador mais elaborado */}
+        <ContadorV2 />
 
     </View>
 )
