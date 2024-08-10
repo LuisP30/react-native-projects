@@ -10,11 +10,13 @@ import Contador from "./components/Contador"
 import Pai from "./components/direta/Pai"
 import Pai2 from "./components/indireta/Pai"
 import ContadorV2 from "./components/contador/Contador"
+import Diferenciar from "./components/Diferenciar"
+import ImparPar from "./components/ImparPar"
 
 export default () => (
-    <View style={style.App}>
+    <SafeAreaView style={style.App}>
         {/* Barra de status em cor azul */}
-        <StatusBar backgroundColor={'blue'}/> 
+        <StatusBar backgroundColor={'skyblue'}/> 
         {/* Meu primeiro componente */}
         {/* <Primeiro /> */}
 
@@ -46,9 +48,15 @@ export default () => (
         {/* <Pai2 /> */}
 
         {/* Contador mais elaborado */}
-        <ContadorV2 />
+        {/* <ContadorV2 /> */}
 
-    </View>
+        {/* Diferenciando sistemas operacionais (android, iOS...) */}
+        {/* <Diferenciar /> */}
+
+        {/* Renderização condicional */}
+        <ImparPar num={11} />
+
+    </SafeAreaView>
 )
 
 // Aplicando estilo
