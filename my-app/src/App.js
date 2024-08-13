@@ -12,6 +12,8 @@ import Pai2 from "./components/indireta/Pai"
 import ContadorV2 from "./components/contador/Contador"
 import Diferenciar from "./components/Diferenciar"
 import ImparPar from "./components/ImparPar"
+import Familia from "./components/relacao/Familia"
+import Membro from "./components/relacao/Membro"
 
 export default () => (
     <SafeAreaView style={style.App}>
@@ -54,7 +56,21 @@ export default () => (
         {/* <Diferenciar /> */}
 
         {/* Renderização condicional */}
-        <ImparPar num={11} />
+        {/* <ImparPar num={11} /> */}
+
+        {/* Aprendendo props.children*/}
+        {/*  Aqui tenho duas familias com dois membros cada
+            (Note que os nomes e sobrenomes estão sendo passados
+            como propriedades)
+        */}
+        <Familia>
+            <Membro nome={'Luis'} sobrenome={'Pimenta'} />
+            <Membro nome={'Henrique'} sobrenome={'Pimenta'} />
+        </Familia>
+        <Familia>
+            <Membro nome={'Luis'} sobrenome={'Queiroz'} />
+            <Membro nome={'Henrique'} sobrenome={'Queiroz'} />
+        </Familia>
 
     </SafeAreaView>
 )
