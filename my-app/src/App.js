@@ -14,6 +14,7 @@ import Diferenciar from "./components/Diferenciar"
 import ImparPar from "./components/ImparPar"
 import Familia from "./components/relacao/Familia"
 import Membro from "./components/relacao/Membro"
+import UsuarioLogado from "./components/UsuarioLogado"
 
 export default () => (
     <SafeAreaView style={style.App}>
@@ -63,14 +64,22 @@ export default () => (
             (Note que os nomes e sobrenomes estão sendo passados
             como propriedades)
         */}
-        <Familia>
+        {/* <Familia>
             <Membro nome={'Luis'} sobrenome={'Pimenta'} />
             <Membro nome={'Henrique'} sobrenome={'Pimenta'} />
         </Familia>
         <Familia>
             <Membro nome={'Luis'} sobrenome={'Queiroz'} />
             <Membro nome={'Henrique'} sobrenome={'Queiroz'} />
-        </Familia>
+        </Familia> */}
+
+        {/* Renderização condicional */}
+        {/* Utilizei os arquivos UsuarioLogado e If nessa aula */}
+        <UsuarioLogado usuario={ {nome: 'Luis', email: 'luis@email.com'} } />
+        <UsuarioLogado usuario={ {nome: 'Henrique'} } />
+        <UsuarioLogado usuario={ null } />
+        <UsuarioLogado usuario={ {} } />
+
 
     </SafeAreaView>
 )
