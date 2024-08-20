@@ -15,6 +15,8 @@ import ImparPar from "./components/ImparPar"
 import Familia from "./components/relacao/Familia"
 import Membro from "./components/relacao/Membro"
 import UsuarioLogado from "./components/UsuarioLogado"
+import ListaProdutos from "./components/produtos/ListaProdutos"
+import ListaProdutosV2 from "./components/produtos/ListaProdutosV2"
 
 export default () => (
     <SafeAreaView style={style.App}>
@@ -75,10 +77,17 @@ export default () => (
 
         {/* Renderização condicional */}
         {/* Utilizei os arquivos UsuarioLogado e If nessa aula */}
-        <UsuarioLogado usuario={ {nome: 'Luis', email: 'luis@email.com'} } />
+        {/* <UsuarioLogado usuario={ {nome: 'Luis', email: 'luis@email.com'} } />
         <UsuarioLogado usuario={ {nome: 'Henrique'} } />
         <UsuarioLogado usuario={ null } />
-        <UsuarioLogado usuario={ {} } />
+        <UsuarioLogado usuario={ {} } /> */}
+
+        {/* Renderizando listas */}
+        {/* <ListaProdutos /> */}
+
+        {/* Aprendendo FlatList */}
+        <ListaProdutosV2 />
+
 
 
     </SafeAreaView>
