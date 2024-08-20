@@ -17,6 +17,7 @@ import Membro from "./components/relacao/Membro"
 import UsuarioLogado from "./components/UsuarioLogado"
 import ListaProdutos from "./components/produtos/ListaProdutos"
 import ListaProdutosV2 from "./components/produtos/ListaProdutosV2"
+import DigiteSeuNome from "./components/DigiteSeuNome"
 
 export default () => (
     <SafeAreaView style={style.App}>
@@ -86,7 +87,10 @@ export default () => (
         {/* <ListaProdutos /> */}
 
         {/* Aprendendo FlatList */}
-        <ListaProdutosV2 />
+        {/* <ListaProdutosV2 /> */}
+
+        {/* Utilizando TextInput */}
+        <DigiteSeuNome />
 
 
 
